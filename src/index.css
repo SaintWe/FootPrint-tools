@@ -1,0 +1,167 @@
+html {
+  touch-action: manipulation;
+}
+
+
+
+
+.desc-title-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  color: darkgreen;
+}
+.desc-title-small-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: xx-small;
+  color: darkgray;
+}
+.desc-result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  color: darkblue;
+}
+
+
+
+/**
+  旋转动画
+*/
+.rotate-icon {
+  animation-direction: reverse;
+}
+
+
+
+
+/**
+代码高亮开始
+*/
+pre {
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+  -webkit-text-size-adjust: none;
+  padding: 5px;
+}
+code {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  top: 20px;
+  font-size: large;
+  font-family: 'LXGW WenKai Mono Screen' !important;
+}
+pre[class*="language-"].line-numbers {
+  position: relative;
+  counter-reset: linenumber;
+  padding-left: 0em;
+  border: none;
+}
+.pre-mac {
+  position: relative;
+  margin-top: 0px;
+  top: 0px;
+  left: 16px;
+  width: 100px;
+  z-index: 99;
+}
+.pre-mac>span {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.pre-mac>span:nth-child(1) {
+  background: red;
+}
+.pre-mac>span:nth-child(2) {
+  background: sandybrown;
+}
+.pre-mac>span:nth-child(3) {
+  background: limegreen;
+}
+/**
+  代码高亮结束
+*/
+
+
+
+
+/**
+ 不显示数字类型输入框的步进切换
+*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield !important;
+    appearance: node;
+    /* Firefox */
+}
+
+
+
+/**
+  输入框布局容器
+*/
+.input-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 设置输入框之间的间隔 */
+}
+
+/* 当只有一个输入框时 */
+.input-box-1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* 当有两个输入框时 */
+.input-box-2 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* 当有三个输入框时 */
+.input-box-3 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+/* 当视口宽度大于等于676px时，所有输入框的宽度都为200px */
+@media (min-width: 700px) {
+  .input-box-1,
+  .input-box-2,
+  .input-box-3 {
+    flex: 0 0 200px;
+    max-width: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.button-container {
+  padding: 15px;
+}
+
+.button-space {
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* 设置输入框之间的间隔 */
+  width: 100%;
+}
+
